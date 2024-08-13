@@ -16,7 +16,8 @@ body {
   width: 90%;
   min-height: 370px;
   max-width: 470px;
-  background: linear-gradient(135deg, #00feba, #5b548a);
+  /* background: linear-gradient(135deg, #1BFFFF, #2E3192); */
+  background: linear-gradient(135deg, #09203F , #537895);
   color: #fff;
   margin: 10px auto 0;
   border-radius: 20px;
@@ -28,7 +29,7 @@ body {
 
 .card h1 {
   height: 50px;
-  color: #074709;
+  color: #ffffff;
   margin-bottom: 40px;
 }
 .search {
@@ -138,7 +139,7 @@ body {
   height: max-content;
   max-height: 190px;
   width: 340px;
-  border: 2px solid rgb(43, 220, 202);
+  border: 2px solid rgb(43, 167, 220);
   border-radius: 10px;
   margin: 10px;
   overflow-y: auto;
@@ -155,11 +156,7 @@ body {
 .suggestBox li {
   list-style-type: none;
   cursor: pointer;
-  color: black;
-}
-
-.suggestBox .list:hover {
-  background-color: rgb(217, 217, 217);
+  color: whitesmoke;
 }
 
 .active {
@@ -167,5 +164,5 @@ body {
 }
 
 .gray {
-  background-color: #555;
+  background-color: rgb(117, 197, 226);
 }

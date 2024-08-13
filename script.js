@@ -113,7 +113,7 @@ async function checkWeather(cityStr) {
     select('.city').textContent = data.name;
     select('.temp').textContent = Math.round(data.main.temp) + '°C';
     select('.humidity').textContent = data.main.humidity + '%';
-    select('.wind').textContent = data.wind.speed + 'km/h';
+    select('.wind').textContent = data.wind.speed + ' km/h';
     const [first, second] = getTimeInfo(data?.timezone);
     select('#time').textContent = first
     select('#date').textContent = second;
