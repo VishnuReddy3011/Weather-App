@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="icon" type="image/x-icon" href="/images/clouds-and-sun.png">
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="card">
+        <h1>Check The Weather!!</h1>
+        <form class="search">
+            <input type="text" placeholder="Enter city name" spellcheck="false" />
+            <button><img src="images/search.png" /></button>
+        </form>
+        <div class="suggestBox"></div>
+        <div class="error">
+            <p>Oops! not a valid city</p>
+        </div>
+
+        <div class="weather">
+            <div class="top">
+                <img src="images/rain.png" class="weather-icon" />
+                <h2 class="temp">22°C</h2>
+                <h3 class="city">Kolkata</h3>
+            </div>
+            <div class="details">
+                <div class="col">
+                    <img src="images/humidity.png" />
+                    <div class="col-detail">
+                        <p class="humidity">50%</p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="images/wind.png" />
+                    <div class="col-detail">
+                        <p class="wind">15 km/h</p>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+            </div>
+            <div class="date-time">
+                <p id="time">02 : 32 PM</p>
+                <p id="date">Tuesday Aug 13</p>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="module" src="script.js"></script>
+</html>
