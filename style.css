@@ -28,15 +28,19 @@ body {
 
 
 .card h1 {
-  height: 50px;
+  /* height: 50px; */
   color: #ffffff;
   margin-bottom: 40px;
 }
+
+
+
 .search {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 16px;
 }
 
 .search input {
@@ -46,10 +50,11 @@ body {
   color: #555;
   padding: 10px 25px;
   height: 40px;
+  width: 100px;
   border-radius: 30px;
   flex: 1;
-  margin-right: 16px;
   font-size: 18px;
+  flex-grow: 1;
 }
 
 .search button {
@@ -165,4 +170,63 @@ body {
 
 .gray {
   background-color: rgb(117, 197, 226);
+}
+
+@media (max-width: 470px) {
+  h1 {
+    font-size: 26px;
+  }
+  .search input {
+    font-size: 14px;
+  }
+  .weather-icon {
+    margin-top: 20px;
+    width: 60px;
+  }
+  .suggestBox {
+    width: 260px;
+    left: 20px;
+  }
+  .top h2 {
+    margin-top: 20px;
+    font-size: 24px;
+  }
+  .top h3 {
+    margin-top: 10px;
+    font-size: 24px;
+  }
+  .weather p {
+    font-size: 16px;
+  }
+  .details img {
+    width: 30px;
+  }
+}
+
+@media (max-width: 370px) {
+  h1 {
+    font-size: 26px;
+  }
+  .search input {
+    font-size: 14px;
+  }
+  .weather-icon {
+    margin-top: 20px;
+    width: 60px;
+  }
+
+  .top h2 {
+    margin-top: 20px;
+    font-size: 24px;
+  }
+  .top h3 {
+    margin-top: 10px;
+    font-size: 24px;
+  }
+  .weather p {
+    font-size: 14px;
+  }
+  .details img {
+    width: 30px;
+  }
 }
