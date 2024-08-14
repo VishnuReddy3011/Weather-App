@@ -21,7 +21,7 @@ body {
   color: #fff;
   margin: 10px auto 0;
   border-radius: 20px;
-  padding: 35px 30px;
+  padding: 35px 25px;
   text-align: center;
   position: relative;
 }
@@ -227,6 +227,12 @@ body {
     font-size: 14px;
   }
   .details img {
-    width: 30px;
+    width: 25px;
+  }
+  .col1 {
+    margin-right: 10px;
+  }
+  .col2 {
+    margin-left: 10px;
   }
 }

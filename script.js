@@ -10,8 +10,8 @@ const weatherIconsMap = new Map([
   ['wind', './images/wind.png'],
   ['thunderstorm', './images/thunderstorms.png'],
 ]);
-import { kmp } from './kmp.js' 
 import db from './db.json' with { type: "json" };
+import { kmp } from './kmp.js';
 const newData = db.cities;
 
 const cache = new Map();
@@ -33,7 +33,7 @@ function formatTime(originalTime) {
   // Parse the original time string
   const timeParts = originalTime.split(' ');
   const time = timeParts[0].split(':');
-  const period = timeParts[1];
+  const period = timeParts[1] || "";
 
   // Extract hours and minutes
   let hours = parseInt(time[0], 10);
